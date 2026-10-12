@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Loay Walid Ahmad — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="name">Loay Walid Ahmad</h1>
+        <p class="role">Computer Engineer — Linux, C++, Physical Computing</p>
+      </div>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+
+    <div class="container welcome-wrap">
+      <div class="welcome-box" role="region" aria-label="Welcome to my portfolio">
+        <h2>Welcome to my portfolio</h2>
+        <p>
+          Hi — I'm Loay. I build Linux tools, C++ applications, and physical projects that connect hardware and software.
+          Below are a few projects and ways to reach me.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="container section-card">
+      <h2>About Me</h2>
+      <p>
+        I'm a computer engineer with practical experience in Linux, systems programming, and embedded/physical computing.
+        I prefer clear, simple solutions and readable code.
+      </p>
+
+      <ul class="skills">
+        <li><strong>Languages</strong>: C++, Bash, Python</li>
+        <li><strong>Platforms</strong>: Linux (Ubuntu, Debian), Embedded Linux</li>
+        <li><strong>Interests</strong>: Systems programming, device interfacing, automation</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="container section-card">
+      <h2>Selected Projects</h2>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Linux System Utility</h3>
+          <p>Command-line tool to monitor and report system metrics with a small config file.</p>
+          <p class="meta">Bash, C++</p>
+        </article>
+
+        <article class="project-card">
+          <h3>C++ Networking Library</h3>
+          <p>Lightweight socket library and framing utilities used in internal tools.</p>
+          <p class="meta">C++17, unit tests</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Embedded Sensor Platform</h3>
+          <p>Microcontroller + Linux gateway that collects sensor data and forwards telemetry.</p>
+          <p class="meta">Embedded C, Linux</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Automation Prototype</h3>
+          <p>Small daemon on a single-board computer controlling GPIO for lab automation.</p>
+          <p class="meta">Python, systemd</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section-card contact-wine">
+      <h2>Contact</h2>
+      <p>If you'd like to get in touch:</p>
+      <ul class="contact-list">
+        <li><strong>Email</strong>: <a href="mailto:loaywalidahmad@gmail.com">loaywalidahmad@gmail.com</a></li>
+        <li><strong>GitHub</strong>: <a href="https://github.com/loaywalidahmad" target="_blank" rel="noopener">github.com/loaywalidahmad</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer footer-wine">
+    <div class="container">
+      <p>© <span id="year"></span> Loay Walid Ahmad — Computer Engineer</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
